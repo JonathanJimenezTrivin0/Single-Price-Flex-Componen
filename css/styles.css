@@ -1,0 +1,209 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: var(--Light-Gray);
+}
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Cyan-alfa: hsla(179, 62%, 43%, 0.85);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Bright-Yellow-alfa: hsla(71, 73%, 54%, 0.9);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Light-Gray-alfa: hsla(204, 43%, 93%, 0.4);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+.main {
+  width: 314px;
+  margin: 70px auto 50px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 65px 4px rgba(152, 166, 189, 0.68);
+  -webkit-box-shadow: 1px 1px 65px 4px rgba(152, 166, 189, 0.68);
+  -moz-box-shadow: 1px 1px 65px 4px rgba(152, 166, 189, 0.68);
+}
+
+.componet {
+  padding: 30px 25px 38px;
+  background-color: #fff;
+}
+
+.componet__title {
+  margin-bottom: 30px;
+  color: var(--Cyan);
+}
+
+.componet__caption {
+  margin-bottom: 25px;
+  color: var(--Bright-Yellow);
+}
+
+.componet__description {
+  color: var(--Grayish-Blue);
+  line-height: 1.5em;
+}
+
+.price__Subscription {
+  height: 228px;
+  padding: 28px 30px 22px;
+  background-color: var(--Cyan);
+}
+
+.price__title {
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.price__cost {
+  font-size: 28px;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.price__cost-mont {
+  font-weight: 400;
+  font-size: 16px;
+
+  color: var(--Light-Gray-alfa);
+}
+
+.price__cost-description {
+  margin-bottom: 30px;
+  color: var(--Light-Gray);
+}
+
+.price__btn {
+  width: 260px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--Bright-Yellow);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.price__btn:focus,
+.price__btn:hover {
+  cursor: pointer;
+  background-color: var(--Bright-Yellow-alfa);
+}
+
+.price__about {
+  padding: 28px 30px 22px;
+  height: 228px;
+  background-color: var(--Cyan-alfa);
+}
+
+.price__about-title {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.price__about-text {
+  font-size: 13px;
+  line-height: 1.5em;
+  margin-right: 80px;
+  color: var(--Light-Gray);
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    margin-top: 162px;
+    width: 634px;
+  }
+
+  .componet {
+    padding-left: 40px;
+  }
+  .componet__title {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .componet__caption {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .price {
+    display: flex;
+  }
+
+  .price__Subscription {
+    height: 259px;
+    padding-top: 40px;
+    padding-left: 40px;
+    width: 317px;
+  }
+
+  .price__btn {
+    width: 239px;
+  }
+
+  .price__about {
+    padding-top: 40px;
+    height: 259px;
+    padding-left: 40px;
+    width: 317px;
+  }
+
+  .price__about-text {
+    font-size: 14px;
+  }
+}
